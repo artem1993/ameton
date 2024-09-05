@@ -1,0 +1,143 @@
+@layer components, variations;
+
+@layer components {
+	.btn {
+		border-radius: 12px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 8px;
+		transition: all 0.3s ease 0s;
+		span {
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 18px;
+		}
+	}
+
+	.icon:not(.icon--arrow) {
+		fill: currentColor;
+	}
+}
+
+@layer variations {
+	.btn {
+		&_white {
+			color: var(--text-color);
+			background-color: var(--subaccent-color);
+			@media (any-hover: hover) {
+				&:hover {
+					color: var(--bannerBg-color);
+				}
+			}
+		}
+		&_green {
+			background-color: var(--accent-color);
+			color: var(--subaccent-color);
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: var(--subaccent-color);
+					color: var(--accent-color);
+				}
+			}
+		}
+		&_gray {
+			color: var(--accent-color);
+			background-color: var(--socialBg-color);
+			@media (any-hover: hover) {
+				&:hover {
+					color: var(--subaccent-color);
+					background-color: var(--accent-color);
+				}
+			}
+		}
+		&_padding {
+			padding: 15px 0;
+		}
+	}
+
+	.btn-social {
+		width: clamp(34px, 6vw, 56px);
+		height: clamp(34px, 6vw, 56px);
+	}
+
+	.btn-work{
+		height: 48px;
+	}
+
+	.icon--chat {
+		width: 14px;
+		height: 13px;
+	}
+
+	.icon--chat2 {
+		width: 16px;
+		height: 16px;
+	}
+
+	.icon--phone {
+		width: 13px;
+		height: 13px;
+	}
+
+	.icon--phone2{
+		width: 16px;
+		height: 16px;
+	}
+
+	.icon--mail {
+		width: 14px;
+		height: 11px;
+	}
+
+	.icon--mail2{
+		width: 16px;
+		height: 12px;
+	}
+
+	.icon--star {
+		width: 18px;
+		height: 16px;
+	}
+
+	.icon--vk {
+		height: 14px;
+		width: 26px;
+	}
+
+	.icon--instagram {
+		height: 20px;
+		width: 20px;
+	}
+
+	.icon--tiktok {
+		height: 22px;
+		width: 19px;
+	}
+
+	.icon--twitter {
+		height: 19px;
+		width: 24px;
+	}
+
+	.icon--dzen {
+		height: 36px;
+		width: 36px;
+	}
+
+	.icon--fb {
+		height: 24px;
+		width: 11px;
+	}
+
+	.icon--arrow {
+		width: 7px;
+		height: 12px;
+	}
+
+	.icon--repost {
+		color: var(--accent-color);
+		width: 18px;
+		height: 20px;
+	}
+}

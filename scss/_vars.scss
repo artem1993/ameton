@@ -1,0 +1,39 @@
+/* VARS */
+$minWidth: 320; // минимальная ширина страницы
+$maxWidth: 1280; // ширина полотна (макета)
+$maxWidthContainer: 1200;
+$generalPadding: 40;
+$innerPadding: rem($generalPadding - 8);
+$containerWidth: $maxWidthContainer + ($generalPadding * 2); // ширина срабатывания первого брейкпоинта
+// тип адаптива:
+// 1 = отзывчивость (у контейнера нет брейкпоинтов)
+// 2 = по брейкпоинтам (контейнер меняет свою ширину по брейкпоинтам)
+$pc: em(
+	$containerWidth
+); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: em(991.98); // планшеты, некоторые телефоны в горизонтальном положении
+$mobile: em(767.98); // телефоны L
+$mobileSmall: em(479.98); // телефоны S
+
+:root {
+	
+	--container-padding: 15px;
+
+	--font-main: "MuseoSansCyrl";
+
+	--big-radius: 40px;
+	--small-radius: 16px;
+
+	--text-color: #1a1a1a;
+	--subtext-color: #949494;
+	--accent-color: #36ba5f;
+	--subaccent-color: #ffffff;
+	--socialBg-color: #f9f9f9;
+	--bannerBg-color: #93BBEA;
+	
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #ffffff;
+}
